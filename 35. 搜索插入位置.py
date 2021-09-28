@@ -7,7 +7,7 @@ from typing import List
 
 输入: nums = [1,3,5,6], target = 5
 输出: 2
-示例2:
+示例2: 
 
 输入: nums = [1,3,5,6], target = 2
 输出: 1
