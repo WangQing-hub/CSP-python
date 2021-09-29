@@ -28,6 +28,8 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
+        """
+        # 环状替换
         n = len(nums)
         c = gcd(n, k)
 
@@ -43,8 +45,13 @@ class Solution:
                 nums[new_idx] = temp
 
                 temp = new_temp
-                idx = new_idx
-
+                idx = new_idx"""
+        # 数组翻转
+        n = len(nums)
+        k = k % n
+        nums.reverse()
+        nums[:k] = reversed(nums[:k])
+        nums[k:] = reversed(nums[k:])
 
 nums = [1,2,3,4,5,6]
 Solution().rotate(nums, 4)
